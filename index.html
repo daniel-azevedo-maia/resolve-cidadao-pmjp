@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal do Cidadão - Serviços Integrados</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>🏛️ Portal do Cidadão</h1>
+        <div class="search-container">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="searchInput" class="search-input" placeholder="O que você precisa hoje?">
+        </div>
+    </header>
+
+    <main>
+        <!-- SEÇÃO: JUSTIÇA E PROCESSOS -->
+        <h2 class="section-title">⚖️ Justiça e Processos</h2>
+        <div class="grid-container section-group">
+            <div class="card" data-keywords="tjpb forum justiça"
+                data-description="Consulte o andamento de processos judiciais de 1ª instância no Tribunal de Justiça da Paraíba.">
+                <button class="info-btn" title="Saiba mais">?</button>
+                <a href="https://pje-consulta-publica.tjpb.jus.br/" target="_blank" class="card-link-overlay"></a>
+                <div class="card-icon">👨‍⚖️</div>
+                <div class="card-title">Consulta Processos TJPB (1º Grau)</div>
+                <div class="card-tag">PJe - Estadual</div>
+            </div>
+            <div class="card" data-keywords="tjpb tribunal recurso"
+                data-description="Acesse processos que estão em fase de recurso na 2ª instância do Tribunal de Justiça da Paraíba.">
+                <button class="info-btn" title="Saiba mais">?</button>
+                <a href="https://consultapublica-pjesg.tjpb.jus.br/pje2g/ConsultaPublica/listView.seam" target="_blank"
+                    class="card-link-overlay"></a>
+                <div class="card-icon">🏛️</div>
+                <div class="card-title">Consulta Processos TJPB (2º Grau)</div>
+                <div class="card-tag">PJe - Tribunal</div>
+            </div>
+            <div class="card" data-keywords="trf federal união"
+                data-description="Consulta pública de processos na Justiça Federal da 1ª Região (TRF1).">
+                <button class="info-btn" title="Saiba mais">?</button>
+                <a href="https://pje1g.trf1.jus.br/consultapublica/ConsultaPublica/listView.seam" target="_blank"
+                    class="card-link-overlay"></a>
+                <div class="card-icon">⚖️</div>
+                <div class="card-title">Justiça Federal (1º Grau)</div>
+                <div class="card-tag">TRF1 - Federal</div>
+            </div>
+            <div class="card" data-keywords="administrativo federal"
+                data-description="Verifique o andamento de processos administrativos em órgãos federais.">
+                <button class="info-btn" title="Saiba mais">?</button>
+                <a href="#" target="_blank" class="card-link-overlay"></a>
+                <div class="card-icon">📑</div>
+                <div class="card-title">Processos Administrativos Federais</div>
+                <div class="card-tag">Consulta</div>
+            </div>
+        </div>
+
+        <!-- SEÇÃO: CERTIDÕES -->
+        <h2 class="section-title">📄 Certidões e Documentos</h2>
+        <div class="grid-container section-group">
+            <div class="card" data-keywords="nada consta criminal civil"
+                data-description="Emita certidões cíveis, criminais e militares do Tribunal de Justiça da Paraíba.">
+                <button class="info-btn" title="Saiba mais">?</button>
+                <a href="https://app.tjpb.jus.br/certo/paginas/publico/areaPublica.jsf" target="_blank"
+                    class="card-link-overlay"></a>
+                <div class="card-icon">📜</div>
+                <div class="card-title">Certidões TJPB</div>
+                <div class="card-tag">Criminal, Cível, Militar</div>
+            </div>
+            <div class="card" data-keywords="federal nada consta"
+                data-description="Certidão que unifica verificação de antecedentes e processos na Justiça Federal.">
+                <button class="info-btn" title="Saiba mais">?</button>
+                <a href="https://certidao-unificada.cjf.jus.br/#/solicitacao-certidao" target="_blank"
+                    class="card-link-overlay"></a>
+                <div class="card-icon">🇧🇷</div>
+                <div class="card-title">Certidão Unificada Federal</div>
+                <div class="card-tag">Justiça Federal</div>
+            </div>
+            <div class="card" data-keywords="policia federal crime"
+                data-description="Documento emitido pela Polícia Federal informando a existência ou não de antecedentes criminais.">
+                <button class="info-btn" title="Saiba mais">?</button>
+                <a href="https://www.gov.br/pf/pt-br/assuntos/antecedentes-criminais" target="_blank"
+                    class="card-link-overlay"></a>
+                <div class="card-icon">👮</div>
+                <div class="card-title">Antecedentes Criminais (PF)</div>
+                <div class="card-tag">Federal</div>
+            </div>
+            <div class="card" data-keywords="policia civil estadual crime"
+                data-description="Consulta de antecedentes criminais na base de dados da Polícia Civil do Estado.">
+                <button class="info-btn" title="Saiba mais">?</button>
+                <a href="#" target="_blank" class="card-link-overlay"></a>
+                <div class="card-icon">👮‍♂️</div>
+                <div class="card-title">Antecedentes Criminais (Estadual)</div>
+                <div class="card-tag">Polícia Civil</div>
+            </div>
+            <div class="card" data-keywords="trabalho trabalhista cndt"
+                data-description="Certidão Negativa de Débitos Trabalhistas. Comprova regularidade perante a Justiça do Trabalho.">
+                <button class="info-btn" title="Saiba mais">?</button>
+                <a href="https://www.tst.jus.br/certidao" target="_blank" class="card-link-overlay"></a>
+                <div class="card-icon">👷</div>
+                <div class="card-title">Regularidade Trabalhista (CNDT)</div>
+                <div class="card-tag">TST</div>
+            </div>
+        </div>
+
+        <!-- SEÇÃO: ELEITORAL -->
+        <h2 class="section-title">🗳️ Eleitoral</h2>
+        <div class="grid-container section-group">
+            <div class="card" data-keywords="voto quitação eleição"
+                data-description="Comprova que o eleitor está em dia com suas obrigações eleitorais (voto, multas, etc).">
+                <button class="info-btn" title="Saiba mais">?</button>
+                <a href="https://www.tse.jus.br/servicos-eleitorais/autoatendimento-eleitoral#/certidoes-eleitor"
+                    target="_blank" class="card-link-overlay"></a>
+                <div class="card-icon">✅</div>
+                <div class="card-title">Certidão de Quitação Eleitoral</div>
+                <div class="card-tag">TSE</div>
+            </div>
+            <div class="card" data-keywords="crime eleição"
+                data-description="Documento que informa a existência ou não de condenações criminais eleitorais.">
+                <button class="info-btn" title="Saiba mais">?</button>
+                <a href="https://www.tse.jus.br/servicos-eleitorais/autoatendimento-eleitoral#/certidoes-eleitor"
+                    target="_blank" class="card-link-overlay"></a>
+                <div class="card-icon">⚖️</div>
+                <div class="card-title">Crimes Eleitorais</div>
+                <div class="card-tag">Antecedentes</div>
+            </div>
+            <div class="card" data-keywords="divida multa eleição"
+                data-description="Consulte débitos decorrentes de ausência às urnas ou aos trabalhos eleitorais.">
+                <button class="info-btn" title="Saiba mais">?</button>
+                <a href="https://www.tse.jus.br/servicos-eleitorais/multas" target="_blank"
+                    class="card-link-overlay"></a>
+                <div class="card-icon">🪙</div>
+                <div class="card-title">Multas Eleitorais</div>
+                <div class="card-tag">Consulta</div>
+            </div>
+        </div>
+
+        <!-- SEÇÃO: FISCAL E TRIBUTÁRIO -->
+        <h2 class="section-title">💰 Fiscal e Tributário</h2>
+        <div class="grid-container section-group">
+            <div class="card" data-keywords="receita pessoa física"
+                data-description="Verifique se o seu CPF está regular na Receita Federal.">
+                <button class="info-btn" title="Saiba mais">?</button>
+                <a href="https://servicos.receita.fazenda.gov.br/servicos/cpf/consultasituacao/consultapublica.asp"
+                    target="_blank" class="card-link-overlay"></a>
+                <div class="card-icon">👤</div>
+                <div class="card-title">Situação do CPF</div>
+                <div class="card-tag">Receita Federal</div>
+            </div>
+            <div class="card" data-keywords="receita empresa"
+                data-description="Emita o comprovante de inscrição e situação cadastral de pessoa jurídica (CNPJ).">
+                <button class="info-btn" title="Saiba mais">?</button>
+                <a href="https://solucoes.receita.fazenda.gov.br/Servicos/cnpjreva/cnpjreva_solicitacao.asp"
+                    target="_blank" class="card-link-overlay"></a>
+                <div class="card-icon">🏢</div>
+                <div class="card-title">Situação do CNPJ</div>
+                <div class="card-tag">Receita Federal</div>
+            </div>
+            <div class="card" data-keywords="imposto divida negativa"
+                data-description="Certidão que prova a regularidade fiscal perante a Fazenda Nacional.">
+                <button class="info-btn" title="Saiba mais">?</button>
+                <a href="https://www.gov.br/pt-br/servicos/emitir-certidao-de-regularidade-fiscal" target="_blank"
+                    class="card-link-overlay"></a>
+                <div class="card-icon">🧾</div>
+                <div class="card-title">Regularidade Fiscal Federal</div>
+                <div class="card-tag">CND Federal</div>
+            </div>
+            <div class="card" data-keywords="pgfn divida ativa"
+                data-description="Consulte débitos inscritos em dívida ativa da União junto à PGFN.">
+                <button class="info-btn" title="Saiba mais">?</button>
+                <a href="https://www.regularize.pgfn.gov.br/" target="_blank" class="card-link-overlay"></a>
+                <div class="card-icon">🏛️</div>
+                <div class="card-title">Dívida Ativa da União</div>
+                <div class="card-tag">Consulta</div>
+            </div>
+            <div class="card" data-keywords="inss previdencia debito"
+                data-description="Certidão Negativa de Débitos relativos às contribuições previdenciárias.">
+                <button class="info-btn" title="Saiba mais">?</button>
+                <a href="#" target="_blank" class="card-link-overlay"></a>
+                <div class="card-icon">👵</div>
+                <div class="card-title">Débitos Previdenciários</div>
+                <div class="card-tag">INSS</div>
+            </div>
+            <div class="card" data-keywords="sefaz estado debito"
+                data-description="Certidão Negativa de Débitos Estaduais (ICMS, IPVA, etc).">
+                <button class="info-btn" title="Saiba mais">?</button>
+                <a href="#" target="_blank" class="card-link-overlay"></a>
+                <div class="card-icon">🗺️</div>
+                <div class="card-title">Débitos Estaduais</div>
+                <div class="card-tag">Sefaz</div>
+            </div>
+            <div class="card" data-keywords="prefeitura municipio debito"
+                data-description="Certidão Negativa de Débitos Municipais (IPTU, ISS, etc).">
+                <button class="info-btn" title="Saiba mais">?</button>
+                <a href="#" target="_blank" class="card-link-overlay"></a>
+                <div class="card-icon">🏙️</div>
+                <div class="card-title">Débitos Municipais</div>
+                <div class="card-tag">Prefeitura</div>
+            </div>
+        </div>
+
+        <!-- SEÇÃO: VEÍCULOS E TRÂNSITO -->
+        <h2 class="section-title">🚗 Veículos e Trânsito</h2>
+        <div class="grid-container section-group">
+            <div class="card" data-keywords="boleto detran pagar"
+                data-description="Consulta de multas de trânsito e emissão de boletos para pagamento.">
+                <button class="info-btn" title="Saiba mais">?</button>
+                <a href="https://detran.pb.gov.br/formularios/multas-consulta-e-emissao-de-boleto-bancario"
+                    target="_blank" class="card-link-overlay"></a>
+                <div class="card-icon">🚦</div>
+                <div class="card-title">Multas e Boletos</div>
+                <div class="card-tag">Detran PB</div>
+            </div>
+            <div class="card" data-keywords="imposto carro moto"
+                data-description="Consulte e emita guias de pagamento do IPVA do seu veículo.">
+                <button class="info-btn" title="Saiba mais">?</button>
+                <a href="https://www.sefaz.pb.gov.br/servirtual/ipva/consultar-debitos" target="_blank"
+                    class="card-link-overlay"></a>
+                <div class="card-icon">💸</div>
+                <div class="card-title">Débitos de IPVA</div>
+                <div class="card-tag">Sefaz PB</div>
+            </div>
+            <div class="card" data-keywords="carteira motorista pontos"
+                data-description="Verifique a pontuação atual da sua Carteira Nacional de Habilitação (CNH).">
+                <button class="info-btn" title="Saiba mais">?</button>
+                <a href="#" target="_blank" class="card-link-overlay"></a>
+                <div class="card-icon">🆔</div>
+                <div class="card-title">Pontuação da CNH</div>
+                <div class="card-tag">Detran</div>
+            </div>
+            <div class="card" data-keywords="situação licenciamento documento"
+                data-description="Consulte a situação do licenciamento anual e restrições do veículo.">
+                <button class="info-btn" title="Saiba mais">?</button>
+                <a href="#" target="_blank" class="card-link-overlay"></a>
+                <div class="card-icon">🚙</div>
+                <div class="card-title">Licenciamento e Situação</div>
+                <div class="card-tag">Veículo</div>
+            </div>
+            <div class="card" data-keywords="nada consta clean"
+                data-description="Emita a certidão de nada consta de multas de trânsito para o veículo.">
+                <button class="info-btn" title="Saiba mais">?</button>
+                <a href="#" target="_blank" class="card-link-overlay"></a>
+                <div class="card-icon">✨</div>
+                <div class="card-title">Nada Consta de Multas</div>
+                <div class="card-tag">Emissão</div>
+            </div>
+            <div class="card" data-keywords="defeito fabrica"
+                data-description="Verifique se há chamados de recall (reparos de fábrica) pendentes para o veículo.">
+                <button class="info-btn" title="Saiba mais">?</button>
+                <a href="https://www.gov.br/pt-br/servicos/consultar-recall-de-veiculos" target="_blank"
+                    class="card-link-overlay"></a>
+                <div class="card-icon">🔧</div>
+                <div class="card-title">Recall de Veículo</div>
+                <div class="card-tag">Segurança</div>
+            </div>
+        </div>
+
+        <!-- SEÇÃO: SOCIAL E OUTROS -->
+        <h2 class="section-title">👥 Social e Outros</h2>
+        <div class="grid-container section-group">
+            <div class="card" data-keywords="aposentadoria auxilio"
+                data-description="Acesse serviços do INSS como extratos, agendamentos e benefícios.">
+                <button class="info-btn" title="Saiba mais">?</button>
+                <a href="https://meu.inss.gov.br/" target="_blank" class="card-link-overlay"></a>
+                <div class="card-icon">🏥</div>
+                <div class="card-title">Benefícios Previdenciários</div>
+                <div class="card-tag">Meu INSS</div>
+            </div>
+            <div class="card" data-keywords="banco conta divida banco central"
+                data-description="Consulte seus relacionamentos com bancos e dívidas no sistema financeiro (Registrato).">
+                <button class="info-btn" title="Saiba mais">?</button>
+                <a href="https://registrato.bcb.gov.br/" target="_blank" class="card-link-overlay"></a>
+                <div class="card-icon">🏦</div>
+                <div class="card-title">Relacionamento Financeiro</div>
+                <div class="card-tag">Registrato</div>
+            </div>
+            <div class="card" data-keywords="ibama meio ambiente"
+                data-description="Consulte multas e embargos ambientais junto ao IBAMA.">
+                <button class="info-btn" title="Saiba mais">?</button>
+                <a href="#" target="_blank" class="card-link-overlay"></a>
+                <div class="card-icon">🌳</div>
+                <div class="card-title">Débitos Ambientais</div>
+                <div class="card-tag">Ibama/Outros</div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-credits">Desenvolvido pela Unidade Municipal de Tecnologia da Informação (UMTI - PMJP)</div>
+        <div class="footer-year">© 2025 Prefeitura Municipal de João Pessoa - PB</div>
+    </footer>
+
+    <!-- MODAL -->
+    <div class="modal-overlay" id="infoModal">
+        <div class="modal-content">
+            <div class="modal-icon" id="modalIcon">💡</div>
+            <h3 class="modal-title" id="modalTitle">Título do Serviço</h3>
+            <p class="modal-text" id="modalDescription">Descrição detalhada do serviço.</p>
+            <button class="modal-close" id="closeModalBtn">Entendi</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
