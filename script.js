@@ -62,6 +62,22 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Carousel Scroll Logic
+    document.querySelectorAll('.scroll-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            const wrapper = btn.closest('.carousel-wrapper');
+            const container = wrapper.querySelector('.carousel-container');
+            const scrollAmount = 300; // Adjust scroll distance
+
+            if (btn.classList.contains('left')) {
+                container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+            } else {
+                container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            }
+        });
+    });
+
+
     // Close Modal
     function closeModal() {
         modalOverlay.classList.remove('active');
