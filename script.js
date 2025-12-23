@@ -63,20 +63,47 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Carousel Scroll Logic
-    document.querySelectorAll('.scroll-btn').forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            const wrapper = btn.closest('.carousel-wrapper');
+    const initCarousels = () => {
+        document.querySelectorAll('.carousel-wrapper').forEach(wrapper => {
             const container = wrapper.querySelector('.carousel-container');
-            const scrollAmount = 300; // Adjust scroll distance
+            const leftBtn = wrapper.querySelector('.scroll-btn.left');
+            const rightBtn = wrapper.querySelector('.scroll-btn.right');
 
-            if (btn.classList.contains('left')) {
-                container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
-            } else {
-                container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-            }
+            if (!container || !leftBtn || !rightBtn) return;
+
+            const updateButtons = () => {
+                const scrollLeft = container.scrollLeft;
+                const maxScrollLeft = container.scrollWidth - container.clientWidth;
+
+                // Tolerance of 2px for float/zoom issues
+                leftBtn.style.opacity = scrollLeft > 2 ? '1' : '0';
+                leftBtn.style.pointerEvents = scrollLeft > 2 ? 'auto' : 'none';
+
+                rightBtn.style.opacity = scrollLeft < maxScrollLeft - 2 ? '1' : '0';
+                rightBtn.style.pointerEvents = scrollLeft < maxScrollLeft - 2 ? 'auto' : 'none';
+            };
+
+            // Scroll Event
+            container.addEventListener('scroll', updateButtons);
+
+            // Resize Event
+            window.addEventListener('resize', updateButtons);
+
+            // Initial Check
+            updateButtons();
+
+            // Click Handlers
+            leftBtn.addEventListener('click', () => {
+                container.scrollBy({ left: -300, behavior: 'smooth' });
+            });
+
+            rightBtn.addEventListener('click', () => {
+                container.scrollBy({ left: 300, behavior: 'smooth' });
+            });
         });
-    });
+    };
 
+    initCarousels();
 
     // Close Modal
     function closeModal() {
